@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adobe Products</title>	
+	<style>
+		/* Global styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Styles for header */
+header {
+	background-color: #222;
+	color: #fff;
+	padding: 10px 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+/* Styles for products section */
+#products {
+	padding: 50px 0;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Styles for columns */
+.col {
+    flex: 1;
+    margin: 10px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    }
+    
+    .col img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    }
+    
+    .col h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    }
+    
+    .col p {
+    font-size: 16px;
+    line-height: 1.5;
+    }
+    
+    @media screen and (max-width: 768px) {
+    .col {
+    flex-basis: 100%;
+    }
+    }
+    
+    /* Styles for footer */
+    footer {
+    background-color: #ccc;
+    padding: 10px 0;
+    text-align: center;
+    }
+    
+    footer p {
+    margin: 0;
+    font-size: 14px;
+    }
+    
+    /* Responsive styles */
+    @media screen and (max-width: 1200px) {
+    .container {
+    max-width: 960px;
+    }
+    }
+    
+    @media screen and (max-width: 992px) {
+    .container {
+    max-width: 720px;
+    }
+    }
+    
+    @media screen and (max-width: 768px) {
+    .container {
+    max-width: 540px;
+    }
+    }
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<img src="https://i.ibb.co/T1jVs2S/adobe-logo.png" alt="Adobe logo">
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Videos</a></li>
+					<li><a href="#">Support</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="products">
+		<div class="container">
+			<h1>Our Course</h1>
+			<div class="row">
+				<div class="col">
+					<a href="learn python.html"><img src="product1.png" alt="Product 1"></a>
+					<h2>Learn python
+                        By CosterRock</h2>
+					<p>Description of Product 1</p>
+				</div>
+				<div class="col">
+					<a href="#"><img src="product2.jpg" alt="Product 2"></a>
+					<h2>Product 2</h2>
+					<p>Description of Product 2</p>
+				</div>
+				<div class="col">
+					<a href="#"><img src="product3.jpg" alt="Product 3"></a>
+					<h2>Product 3</h2>
+					<p>Description of Product 3</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<a href="#"><img src="product4.jpg" alt="Product 4"></a>
+					<h2>Product 4</h2>
+					<p>Description of Product 4</p>
+				</div>
+				<div class="col">
+					<a href="#"><img src="product5.jpg" alt="Product 5"></a>
+					<h2>Product 5</h2>
+					<p>Description of Product 5</p>
+				</div>
+				<div class="col">
+					<a href="#"><img src="product6.jpg" alt="Product 6"></a>
+					<h2>Product 6</h2>
+					<p>Description of Product 6</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<p>&copy; 2023 Adobe Inc.</p>
+		</div>
+	</footer>
+</body>
+</html>
